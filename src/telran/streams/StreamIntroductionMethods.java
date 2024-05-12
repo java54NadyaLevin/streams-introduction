@@ -35,5 +35,8 @@ static public void displayShuffle(int ar[]) {
 	//no sorting
 	//no additional arrays, no any collections, no using standard shuffle method
 	//one code line
-}
+   new Random().ints(1000, 0, ar.length).distinct().forEach(n -> System.out.print(ar[n] + " "));
+   System.out.println("");
+    
+    }
 }

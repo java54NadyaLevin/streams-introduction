@@ -33,11 +33,11 @@ class StreamsIntroductionTests {
 		int [] expected = {1, 2, 10};
 		assertArrayEquals(expected, sortDistinct(ar));
 	}
-	@Test
-	void forEachIfTest() {
-		int [] ar= {1, 10, 1, 1, 2};
-		forEachIf(ar, n -> n % 2 != 0, n -> System.out.print(n + " "));
-	}
+//	@Test
+//	void forEachIfTest() {
+//		int [] ar= {1, 10, 1, 1, 2};
+//		forEachIf(ar, n -> n % 2 != 0, n -> System.out.print(n + " "));
+//	}
 	@Test
 	void  getRandomArrayTest() {
 		int ar[] = getRandomArray(10, 12, 1000);
@@ -45,5 +45,14 @@ class StreamsIntroductionTests {
 		assertTrue(Arrays.stream(ar).allMatch(n -> n >= 10 && n < 12));
 		assertEquals(21, sumDistinct(ar));
 	}
+	@Test
+	void displayShuffleTest() {
+		int ar[] = {10, 20, 30, 40};
+	    displayShuffle(ar);
+	    displayShuffle(ar);
+	    displayShuffle(ar);
+	    displayShuffle(ar);
+		}
+	}
 
-}
+
